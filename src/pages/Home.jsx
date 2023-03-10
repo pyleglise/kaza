@@ -6,6 +6,8 @@ import background from "../assets/background-home.png";
 
 // Définition de la fonction Home qui retourne le contenu de la page
 function Home() {
+  
+
   return (
     <>
       <Banner

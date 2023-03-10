@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&family=Nunito:wght@200&family=Roboto+Mono:wght@200&family=Roboto:wght@300&family=Shrikhand&family=Square+Peg&display=swap');
+@import 'colors';
+
+body {
+  // max-width: 1240px;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  color: $primary-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

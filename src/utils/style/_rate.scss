@@ -1,0 +1,27 @@
+@import 'colors';
+.rating {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.starColors {
+  width: 15px;
+  height: 15px;
+  color: $primary-color;
+  margin-right: 5px;
+}
+
+.starWhite {
+  width: 15px;
+  height: 15px;
+  color: $very-light-grey;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .rating {
+    margin-left: 0px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+}

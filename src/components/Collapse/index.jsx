@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
-import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
-import "../../utils/style/_collapses.scss";
+import React, { useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
+import '../../utils/style/_collapses.scss'
 
-function Collapse({ title, children, isOpen = false }) {
-  const [visible, setVisible] = useState(isOpen);
+const Collapse = ({ title, children, isOpen = false }) => {
+  const [visible, setVisible] = useState(isOpen)
 
   const display = () => {
-    setVisible(!visible);
-  };
+    setVisible(!visible)
+  }
 
   return (
     <section className="collapse-section">
@@ -27,7 +27,7 @@ function Collapse({ title, children, isOpen = false }) {
         {visible && <div className="info-description">{children}</div>}
       </div>
     </section>
-  );
+  )
 }
 
-export default Collapse;
+export default Collapse

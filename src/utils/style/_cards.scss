@@ -1,71 +1,67 @@
-
 .cards {
-    grid-gap: 30px;
-    background-color: #f7f7f7;
-    border-radius: 25px;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-    margin: 45px;
-    padding: 50px;
-    .article-cards {
-      position: relative;
+  grid-gap: 30px;
+  background-color: #f7f7f7;
+  border-radius: 25px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  margin: 25px 100px;
+  padding: 50px;
+  .article-cards {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 340px;
+    border-radius: 10px;
+    img {
       display: flex;
       width: 100%;
-      height: 340px;
+      border-radius: 20px;
+      object-fit: cover;
+      filter: brightness(0.9);
+    }
+    .layer-cards {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
       border-radius: 10px;
-      img {
+      .p-cards {
         display: flex;
-        width: 100%;
-        border-radius: 20px;
-        object-fit: cover;
-        filter: brightness(0.9);
-      }
-      .layer-cards {
-        display: flex;
-        align-items: center;
+        align-items: flex-end;
         position: absolute;
-        bottom: 0;
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        .p-cards {
-          display: flex;
-          align-items: flex-end;
-          position: absolute;
-          font-size: 18px;
-          font-style: normal;
-          font-weight: 500;
-          color: #ffff;
-          line-height: 142.6%;
-          left: 5.88%;
-          right: 5.88%;
-          top: 78.82%;
-          bottom: 5.88%;
-        }
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        color: white;
+        line-height: 142.6%;
+        left: 5.88%;
+        right: 5.88%;
+        top: 78.82%;
+        bottom: 5.88%;
       }
-      
     }
   }
-  
-  /* Mobile */
-  @media screen and (max-width: 768px) {
-    .cards {
-      display: flex;
-      flex-direction: column;
-      background-color: #ffff;
-      margin: 25px 0px;
-      .article-cards {
-        height: 0%;
-        img {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 290px;
-          margin-left: 0px;
-          margin-right: 10px;
-          border-radius: 10px;
-        }
+}
+
+/* Mobile */
+@media screen and (max-width: 768px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    margin: 20px;
+    padding: 0px;
+    min-width: 300px;
+    .article-cards {
+      height: 230px;
+      width: 100%;
+      img {
+        border-radius: 10px;
       }
+    }
   }
 }

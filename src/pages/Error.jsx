@@ -1,5 +1,5 @@
-import "../utils/style/_error.scss";
-import { NavLink } from "react-router-dom";
+import '../utils/style/_error.scss'
+import { NavLink } from 'react-router-dom'
 
 export default function Untraceable() {
   return (
@@ -9,11 +9,11 @@ export default function Untraceable() {
       <p>
         <NavLink
           to="/"
-          className={({ isActive }) => (isActive ? "activeLink" : undefined)}
+          className={({ isActive }) => (isActive ? 'activeLink' : undefined)}
         >
           Retournez sur la page d'accueil
         </NavLink>
       </p>
     </div>
-  );
+  )
 }

@@ -17,5 +17,4 @@ const Tags = ({ lodge }) => {
     </div>
   )
 }
-
 export default Tags

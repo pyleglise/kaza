@@ -10,13 +10,22 @@ const Rate = ({ lodge }) => {
     <div className="rating">
       {stars.map((level, index) =>
         lodge.rating >= level ? (
-          <img key={index} className="starColors" src={starColors} alt="" />
+          <img
+            key={index}
+            className="starColors"
+            src={starColors}
+            alt="FullStar"
+          />
         ) : (
-          <img key={index} className="starWhite" src={starWhite} alt="" />
+          <img
+            key={index}
+            className="starWhite"
+            src={starWhite}
+            alt="EmptyStar"
+          />
         )
       )}
     </div>
   )
 }
-
 export default Rate

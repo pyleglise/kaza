@@ -1,7 +1,7 @@
 {
   "name": "kasa",
   "version": "1.0.1",
-  "homepage": "/docs/",
+  "homepage": ".",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.3.0",

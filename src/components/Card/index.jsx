@@ -18,5 +18,4 @@ const Card = ({ id, cover, title, location }) => {
     </Link>
   )
 }
-
 export default Card

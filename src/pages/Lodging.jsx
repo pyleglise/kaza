@@ -7,7 +7,8 @@ import Collapse from '../components/Collapse'
 import Error from '../pages/Error'
 import '../utils/style/_lodging.scss'
 import '../utils/style/_loader.scss'
-// import lodges from '../data/lodging.json'
+// eslint-disable-next-line no-unused-vars
+import lodges from '../data/lodging.json'
 import { useGet } from '../components/Hook'
 
 /*
